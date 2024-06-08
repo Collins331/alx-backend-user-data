@@ -50,6 +50,7 @@ class Auth:
         return None
 
     def session_cookie(self, request=None):
+        """Retrieve session cookies"""
         if request is None:
             return None
         cookie_name = getenv("SESSION_NAME")
